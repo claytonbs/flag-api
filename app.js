@@ -6,8 +6,9 @@ const cors = require('cors')
 const app = express();
 var bodyParser = require('body-parser');
 
+mongoose.connect('mongodb://flagsuser:123mudar@ds048279.mlab.com:48279/flags');
 
-mongoose.connect('mongodb://localhost/rankingflag');
+//mongoose.connect('mongodb://localhost/rankingflag');
 mongoose.Promise = Promise;
 
 
